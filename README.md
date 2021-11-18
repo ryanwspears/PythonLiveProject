@@ -7,10 +7,6 @@ My task for this project was to create a website that could allow a user to crea
 ## Creating Items
 ![Create GIF](/GIFs/create.gif)
 ### Code
-
-## Editing Items
-![Edit GIF](/GIFs/edit.gif)
-### Code
 -[Template](https://github.com/ryanwspears/PythonLiveProject/blob/main/AnimeReviews/AnimeReviews/templates/anime_reviews_create.html)
 -[Form](https://github.com/ryanwspears/PythonLiveProject/blob/main/AnimeReviews/AnimeReviews/forms.py)
 -[Model](https://github.com/ryanwspears/PythonLiveProject/blob/main/AnimeReviews/AnimeReviews/models.py)
@@ -25,8 +21,11 @@ def anime_reviews_create(request):
         print(form.errors)
         form = NewAnime()
         context = {'form': form}
-    return render(request, 'anime_reviews_create.html', context)
-    ```
+    return render(request, 'anime_reviews_create.html', context)```
+
+## Editing Items
+![Edit GIF](/GIFs/edit.gif)
+### Code
 
 ## Deleting Items
 ![Delete GIF](/GIFs/delete.gif)
