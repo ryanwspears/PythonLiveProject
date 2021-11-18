@@ -1,0 +1,22 @@
+{% extends "anime_reviews_base.html" %}
+{% load static %}
+
+{% block title %}Delete Review{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <div>
+        <h1 class="viewHead">Do you really want to delete this review?</h1>
+        {{ item.as_p}}
+    </div>
+    <div class="submitBtn">
+        <button id="delBtn" type="submit" name="Delete">Yes, Delete This Review</button>
+    </div>
+    <div class="submitBtn">
+        <button id="cancelBtn" type="submit" name="Cancel"><a class="delA" href="{% url 'anime_reviews_view' %}">Cancel</a></button>
+    </div>
+</form>
+
+{% endblock %}

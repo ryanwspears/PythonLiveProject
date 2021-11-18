@@ -1,0 +1,36 @@
+{% extends "anime_reviews_base.html" %}
+{% load static %}
+{% block title %}Review Details{% endblock %}
+
+{% block content %}
+
+<h1 class="viewHead">Review Details</h1>
+
+<div class="table_container">
+    <table class="table" id="detailTbl">
+        <thead>
+            <tr class="tHead">
+                <th>Anime Name</th>
+                <th>Number of Episodes</th>
+                <th>Studio Name</th>
+                <th>Rating</th>
+                <th>Review</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tBody">
+                <td>{{ details.animeName }}</td>
+                <td>{{ details.numOfEpisodes }}</td>
+                <td>{{ details.studioName }}</td>
+                <td>{{ details.rating }}</td>
+                <td>{{ details.review }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="submitBtn">
+    <a class="editA" href="{% url 'anime_reviews_edit' details.pk %}"><button id="editBtn" name="Edit_Anime">Edit Review</button></a>
+    <a class="deleteA" href="{% url 'anime_reviews_delete' details.pk %}"><button id="deleteBtn" name="Delete_Anime">Delete Review</button></a>
+</div>
+
+{% endblock %}

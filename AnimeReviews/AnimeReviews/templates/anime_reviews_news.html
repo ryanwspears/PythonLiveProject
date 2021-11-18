@@ -1,0 +1,28 @@
+{% extends 'anime_reviews_base.html' %}
+
+{% load static %}
+
+{% block title %}Anime News{% endblock %}
+
+
+{% block content %}
+
+<h1 class="viewHead">Latest Anime News</h1>
+<h1 class="newsSub" style="font-size: 50px;">Provided by <a id="newsA" href="https://myanimelist.net/news" target="_blank" rel="noopener noreferrer">My Anime List</a></h1>
+
+<div class="card-deck">
+    {% for i in feed %}
+        {% if forloop.counter|divisibleby:"4" %}
+                </div><div class="card-deck">
+        {% endif %}
+  <div class="card-horizontal mx-auto mb-4">
+    <a href="{{ i.2 }}" id="newsB" target="_blank" rel="noopener noreferrer"><img class="card-img-top" id="newsCard" src="{{ i.1 }}" alt="Card image cap"></a>
+    <div class="card-body">
+      <a href="{{ i.2 }}" id="newsC" target="_blank" rel="noopener noreferrer"><h5 class="card-title">{{ i.0 }}</h5></a>
+      <p class="card-text" id="newsDesc">{{ i.3 }}</p>
+    </div>
+  </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

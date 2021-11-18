@@ -1,0 +1,284 @@
+html {
+    scroll-behavior: smooth;
+}
+html,body {
+	display: flexbox;
+	word-wrap: break-word;
+	background-color: #1F2833;
+	margin: 0;
+}
+.headingTxt {
+	padding-top: 4em;
+	padding-bottom: 5em;
+	font-family: "Poppins";
+	font-size: 80px;
+	line-height: 84px;
+	font-weight: 700;
+	background-color: #46879B;
+	color: #66FCF1;
+	text-align: center;
+}
+#homeTxt {
+	background-image:url("/static/images/background.png");
+	background-position:50% 90%;
+	background-repeat: no-repeat;
+	padding-top: 5em;
+}
+.background_img {
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	z-index: -1;
+}
+.anime_container {
+	text-align: center;
+	font-family: "Poppins";
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 200;
+	background-color: #1F2833;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	color: #66FCF1;
+}
+.submitBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #1F2833;
+}
+#add_anime_button, #editBtn, #deleteBtn, #delBtn {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: 2px solid #e74c3c;
+	border-radius: 0.6em;
+	color: #e74c3c;
+	cursor: pointer;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 20px;
+	padding: 1.2em 2.8em;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	border-radius: 3em;
+	border-color: #1abc9c;
+	color: #fff;
+	background-image: -webkit-linear-gradient(left, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+	background-image: linear-gradient(to right, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+	background-position: 0 0;
+	background-size: 100%;
+	-webkit-transition: background 300ms ease-in-out;
+	transition: background 300ms ease-in-out;
+}
+#add_anime_button:hover, #add_anime_button:focus, #editBtn:hover, #editBtn:focus, #deleteBtn:hover, #deleteBtn:focus, #delBtn:hover, #delBtn:focus {
+	color: #fff;
+	outline: 0;
+	background-position: 100px;
+}
+#cancelBtn {
+	color: #fff;
+	background-color: red;
+	border: 2px solid #e74c3c;
+	border-radius: 0.6em;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 20px;
+	padding: 1.2em 2.8em;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	border-radius: 3em;
+	border-color: #000;
+	cursor: pointer;
+}
+.viewHead {
+	text-align: center;
+	background-color: #1F2833;
+	font-family: "Poppins";
+	font-size: 80px;
+	font-weight: 700;
+	color: #66FCF1;
+	padding-top: 1em;
+	margin-bottom: 0;
+}
+.table_container{
+	padding-top: 2em;
+	background-color: #1F2833;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.table {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+#detailTbl table {
+    margin-bottom: 0;
+}
+th {
+	opacity: 0.8;
+	position: relative;
+	height: auto;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: #45A29E;
+	color: #000;
+	text-align: center;
+}
+td {
+    border-radius: 8px;
+    border-style: hidden;
+}
+.tHead {
+	text-align: center;
+	border-style: hidden;
+}
+.tBody {
+	text-align: center;
+	opacity: 0.8;
+	position: relative;
+	height: auto;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: #C5C6C7;
+	color: #000;
+}
+.editA, .deleteA, .delA {
+	text-decoration: none;
+	color: #fff;
+}
+.btn {
+	background-color: #46879B;
+	color: #fff;
+}
+.btn:hover {
+	background-color: #CAF0F8;
+	color: #000;
+}
+nav {
+	padding-bottom: 1em;
+}
+.nav-link {
+	color: #fff;
+}
+.nav-link:hover {
+	text-decoration: none;
+	color: #46879B;
+}
+.navbar-brand {
+	text-decoration: none;
+	color: #fff;
+}
+.navbar-brand:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.searchBox {
+	display: flex;
+	justify-content: center;
+	background-color: #1F2833;
+	padding: 1.2em 2.8em;
+}
+.search-field {
+	appearance;
+	none;
+	background: none;
+	border: none;
+	outline: none;
+	background-color: #F3F3F3;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15)display: block;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	border-radius: 8px;
+}
+.card-group {
+	background-color: #1F2833;
+	text-align: center;
+}
+.card-deck {
+	background-color: #1F2833;
+	font-size: 20px;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+.card {
+	max-width: 300px;
+	max-height: 600px;
+}
+.card-body {
+    background-color: #C5C6C7;
+    border-radius: 8px;
+}
+.card-img-top {
+	max-width: 300px;
+	max-height: 450px;
+}
+.card-horizontal {
+	display: flex;
+	flex: 1 1 auto;
+	background-color: #C5C6C7;
+	border-radius: 8px;
+}
+#newsCard {
+	min-width: 100px;
+	min-height: 150px;
+}
+#newsA, #newsB, #newsC{
+	text-decoration: none;
+	color: #45A29B;
+}
+.newsSub {
+	text-align: center;
+	background-color: #1F2833;
+	font-family: "Poppins";
+	font-size: 80px;
+	line-height: 84px;
+	font-weight: 700;
+	color: #66FCF1;
+	margin-bottom: 0;
+}
+.animeForm {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    visibility: hidden;
+}
+[name=animeName], [name=numOfEpisodes], [name=studioName], [name=rating] {
+    text-align: center;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	height: 3rem;
+	color: #fff;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	background-color: #1F2833;
+}
+

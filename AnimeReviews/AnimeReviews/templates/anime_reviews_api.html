@@ -1,0 +1,36 @@
+{% extends 'anime_reviews_base.html' %}
+
+{% load static %}
+
+{% block title %}Search Anime{% endblock %}
+
+
+{% block content %}
+<h1 class="viewHead">Search for more Anime here!</h1>
+
+<div class="apiBox">
+    <form class="searchBox" method="POST">
+        {% csrf_token %}
+        <input type="search"
+               class="search-field"
+               name="searchTerm"
+               placeholder="Type your search here and press enter..."
+               required />
+    </form>
+</div>
+
+<div class="card-group">
+    {% for i in resultList %}
+        {% if forloop.counter|divisibleby:"4" %}
+            </div><div class="card-group">
+        {% endif %}
+  <div class="card mx-auto mb-4">
+    <a href="{{ i.0 }}" target="_blank"><img class="card-img-top" src="{{ i.1 }}" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5 class="card-title">{{ i.2 }}</h5>
+    </div>
+  </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
