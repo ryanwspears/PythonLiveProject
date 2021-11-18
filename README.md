@@ -6,3 +6,15 @@ My task for this project was to create a website that could allow a user to crea
 
 ### Creating Items
 ![Create GIF](/GIFs/create.gif)
+
+### Editing Items
+![Edit GIF](/GIFs/edit.gif)
+
+### Deleting Items
+![Delete GIF](/GIFs/delete.gif)
+
+### Searching For Anime
+![Search GIF](/GIFs/search.gif)
+
+### Getting News
+![News GIF](/GIFs/news.gif)
