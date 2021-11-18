@@ -11,6 +11,22 @@ My task for this project was to create a website that could allow a user to crea
 ## Editing Items
 ![Edit GIF](/GIFs/edit.gif)
 ### Code
+-[Template](https://github.com/ryanwspears/PythonLiveProject/blob/main/AnimeReviews/AnimeReviews/templates/anime_reviews_create.html)
+-[Form](https://github.com/ryanwspears/PythonLiveProject/blob/main/AnimeReviews/AnimeReviews/forms.py)
+-[Model](https://github.com/ryanwspears/PythonLiveProject/blob/main/AnimeReviews/AnimeReviews/models.py)
+-View:
+```cs
+def anime_reviews_create(request):
+    form = NewAnime(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('anime_reviews_create')
+    else:
+        print(form.errors)
+        form = NewAnime()
+        context = {'form': form}
+    return render(request, 'anime_reviews_create.html', context)
+    ```
 
 ## Deleting Items
 ![Delete GIF](/GIFs/delete.gif)
