@@ -70,6 +70,7 @@ def anime_reviews_delete(request, pk):
 ![Search GIF](/GIFs/search.gif)
 ### Code
 - [Template](https://github.com/ryanwspears/PythonLiveProject/blob/main/AnimeReviews/AnimeReviews/templates/anime_reviews_api.html)
+- [Jikan API](https://rapidapi.com/theapiguy/api/jikan1)
 - View:
 ```cs
 def anime_reviews_api(request):
