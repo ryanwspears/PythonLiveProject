@@ -136,3 +136,7 @@ def anime_reviews_news(request):
 
     return render(request, 'anime_reviews_news.html', context)
  ```
+
+## Extras
+- [Static Files](https://github.com/ryanwspears/PythonLiveProject/tree/main/AnimeReviews/AnimeReviews/static)
+- [URLs](https://github.com/ryanwspears/PythonLiveProject/blob/main/AnimeReviews/AnimeReviews/urls.py)
