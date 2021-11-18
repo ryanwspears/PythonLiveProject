@@ -21,7 +21,9 @@ def anime_reviews_create(request):
         print(form.errors)
         form = NewAnime()
         context = {'form': form}
-    return render(request, 'anime_reviews_create.html', context)```
+    return render(request, 'anime_reviews_create.html', context)
+```
+
 
 ## Editing Items
 ![Edit GIF](/GIFs/edit.gif)
